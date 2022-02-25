@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.foodie.loginprovider.mapper.TeacherMapper">
+  <resultMap id="BaseResultMap" type="com.foodie.pojo.Teacher">
+    <id column="teaid" jdbcType="INTEGER" property="teaid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+  </resultMap>
+  <select id="selectTeacherByPrimaryKey" parameterType="com.foodie.pojo.Teacher" resultMap="BaseResultMap">
+    select teaid, name, password
+    from teacher
+    where teaid = #{teaid,jdbcType=INTEGER} and password = #{password,jdbcType=VARCHAR}
+  </select>
+  <insert id="insertTeacher" useGeneratedKeys="true" keyColumn="teaid" keyProperty="teaid" parameterType="com.foodie.pojo.Teacher">
+    insert into teacher (name, password)
+    values (#{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR})
+  </insert>
+</mapper>

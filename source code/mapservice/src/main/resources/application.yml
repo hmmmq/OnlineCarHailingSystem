@@ -1,0 +1,24 @@
+server:
+  port: 6003
+spring:
+  application:
+    name: demoserver
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://euk1.com:7001/eureka/
+    instance:
+      hostname: localhost
+      prefer-ip-address: true
+    enabled: false
+
+  #包含的服务，也可以exclude,服务中心就不上线
+  #management.endpoints.web.exposure.include=*
+
+  #可以远程关闭服务节点
+  #management.endpoint.shutdown.enabled=true
+
+  #可以上报服务的真实健康状态
+  #eureka.client.health

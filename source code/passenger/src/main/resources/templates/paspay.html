@@ -1,0 +1,218 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<link rel="canonical" href="Ataxi.com/PasPay.html" />
+	<meta name="robots" content="index, follow" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css?2382">
+	<link rel="stylesheet" type="text/css" href="/style.css?3573">
+	<link rel="stylesheet" type="text/css" href="/css/animate.min.css?1459">
+	<link rel="stylesheet" type="text/css" href="/css/custom.css?5630">
+	<link rel="stylesheet" type="text/css" href="/css/leaflet.css?6403">
+	
+	<link rel="stylesheet" type="text/css" href="/css/all.min.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <title>PasSub-1</title>
+
+
+    
+<!-- Analytics -->
+ 
+<!-- Analytics END -->
+    
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+<!-- Preloader END -->
+
+
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- bloc-nav -->
+<div class="bloc none bgc-carmine-pink d-bloc" id="bloc-nav">
+	<div class="container bloc-sm bloc-no-padding-lg">
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-light row navbar-expand-md nav-pa" role="navigation" id="nav-pa">
+					<a class="navbar-brand" href="index.html"><img src="/img/logo5.png" alt="logo" /></a>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-nav END -->
+
+<!-- bloc-10 -->
+<div class="bloc" id="bloc-10">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col">
+				<h1 class="mg-md tc-charcoal">
+					<strong>您已到达目的地，请尽快支付订单</strong>
+				</h1>
+			</div>
+		</div>
+		<div class="row voffset">
+			<div class="col-sm-4 col">
+				<ul class="list-unstyled list-sp-lg">
+					<li>
+						<div class="card card-rd">
+							<div class="card-header bgc-carmine-pink">
+								<h4 class="mg-clear tc-white">
+									<strong>订单信息</strong>
+								</h4>
+							</div>
+							<div class="card-body">
+								<p th:text="${orderRes1.orderid}" class="mg-md">
+									订单编号
+								</p>
+								<p th:text="${orderRes1.route.departure.name} + ' 到 ' + ${orderRes1.route.destination.name}" class="mg-md">
+									路线基本信息,route实体类
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="card card-rd">
+							<div class="card-header bgc-carmine-pink">
+								<h4 class="mg-clear tc-white">
+									<strong>司机信息</strong>
+								</h4>
+							</div>
+							<div class="card-body">
+								<h5 class="mg-md">
+									司机昵称
+								</h5>
+								<p th:text="${orderRes1.driver.phone}" class="mg-md">
+									联系电话
+								</p>
+								<h5 th:text="${orderRes1.car.number}" class="mg-md">
+									车牌号
+								</h5>
+								<p th:text="${orderRes1.car.brand}">
+									汽车品牌
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="card card-rd">
+							<div class="card-header bgc-carmine-pink">
+								<h2 class="mg-clear tc-white h2-订单详情-style">
+									<strong>实际价格</strong>
+								</h2>
+							</div>
+							<div class="card-body">
+								<div class="row align-items-center">
+									<div class="col">
+										<div class="form-group">
+											<h3 class="mg-md tc-charcoal">
+												<strong th:text="'合计： ' + ${#numbers.formatDecimal(${orderRes1.fare}, 1, 2)} + '元'">合计： 9.00元</strong>
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-footer">
+								<ul class="list-unstyled">
+									<li>
+										<a href="#" class="btn btn-lg btn-block btn-rd btn-呼叫司机-style btn-carmine-pink" id="btn2" data-toggle="modal" data-target="#modal-23486">即刻支付<br></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-8 col">
+				<div id="modal-23486" class="modal fade" tabindex="-1" role="dialog">
+					<div class="modal-dialog  modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="bgc-medium-spring-bud modal-header">
+								<h3 class="mg-clear tc-charcoal">
+									选择支付方式
+								</h3>
+							</div>
+							<div class="modal-body">
+								<h3 class="mg-md tc-charcoal text-lg-center h3-合计：-9-00元-style">
+									<strong>9.00元</strong>
+								</h3>
+								<div class="row voffset">
+									<div class="col">
+										<ul class="list-unstyled list-sp-md">
+											<li>
+												<div class="text-center w-100">
+													<a th:href="@{/passenger/pay(orderid=${orderRes1.orderid}, paytype='2')}" class="btn btn-lg btn-malachite btn-微信支付-style">微信支付</a>
+												</div>
+											</li>
+											<li>
+												<div class="text-center w-100">
+													<a th:href="@{/passenger/pay(orderid=${orderRes1.orderid}, paytype='1')}" class="btn btn-lg btn-dodger-blue btn-支付宝支付-style">支付宝支付</a>
+												</div>
+											</li>
+											<li>
+												<div class="text-center container-div-style text-lg-center w-100">
+													<a th:href="@{/passenger/pay(orderid=${orderRes1.orderid}, paytype='0')}" class="btn btn-lg btn-carmine-pink btn-大伙钱包支付-style">大伙钱包支付</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div><div id="be-mapid" class="osm-map" data-iconsrc="/img/lazyload-ph.png" data-src="" data-positionlat="49" data-positionlng="6" data-icontext="Some info" data-height="350px" data-enableinfobox="1" data-setownicon="0" data-zoom="13">
+
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-10 END -->
+
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32"><path class="scroll-to-top-btn-icon" d="M30,22.656l-14-13-14,13"/></svg></a>
+<!-- ScrollToTop Button END-->
+
+
+<!-- bloc-3 -->
+<div class="bloc l-bloc" id="bloc-3">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-12">
+				<img src="/img/lazyload-ph.png" data-src="/img/logo4.png" class="img-fluid mx-auto d-block img-3-style lazyload" alt="logo" />
+				<p class="mg-sm mx-auto d-block text-lg-center">
+					Copyright © 2021 Foodie. All Rights Reserved.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-3 END -->
+
+</div>
+<!-- Main container END -->
+    
+
+
+<!-- Additional JS -->
+<script src="/js/jquery-3.5.1.min.js?9219"></script>
+<script src="/js/bootstrap.bundle.min.js?6975"></script>
+<script src="/js/blocs.min.js?1591"></script>
+<script src="/js/lazysizes.min.js" defer></script>
+<script src="/js/leaflet.js?9548"></script>
+<script src="/js/osm_map.js?7247"></script><!-- Additional JS END -->
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.foodie.orderservice.mapper.test.RouteMapper">
+  <resultMap id="BaseResultMap" type="com.foodie.common.pojo.Route">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="departureid" jdbcType="INTEGER" property="departureid" />
+    <result column="destinationid" jdbcType="INTEGER" property="destinationid" />
+    <result column="distance" jdbcType="INTEGER" property="distance" />
+    <result column="timecost" jdbcType="INTEGER" property="timecost" />
+    <result column="toll" jdbcType="INTEGER" property="toll" />
+    <result column="orderid" jdbcType="INTEGER" property="orderid" />
+    <result column="type" jdbcType="TINYINT" property="type" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from route
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.foodie.common.pojo.Route" useGeneratedKeys="true" keyProperty="id">
+    insert into route ( departureid, destinationid,
+      distance, timecost, toll,
+      orderid, type)
+    values (#{departureid,jdbcType=INTEGER}, #{destinationid,jdbcType=INTEGER},
+      #{distance,jdbcType=INTEGER}, #{timecost,jdbcType=INTEGER}, #{toll,jdbcType=INTEGER}, 
+      #{orderid,jdbcType=INTEGER}, #{type,jdbcType=TINYINT})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.foodie.common.pojo.Route">
+    update route
+    set departureid = #{departureid,jdbcType=INTEGER},
+      destinationid = #{destinationid,jdbcType=INTEGER},
+      distance = #{distance,jdbcType=INTEGER},
+      timecost = #{timecost,jdbcType=INTEGER},
+      toll = #{toll,jdbcType=INTEGER},
+      orderid = #{orderid,jdbcType=INTEGER},
+      type = #{type,jdbcType=TINYINT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, departureid, destinationid, distance, timecost, toll, orderid, type
+    from route
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, departureid, destinationid, distance, timecost, toll, orderid, type
+    from route
+  </select>
+</mapper>

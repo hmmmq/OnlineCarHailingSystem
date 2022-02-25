@@ -1,0 +1,70 @@
+List<OrderRes4> select(Site site);
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.foodie.orderservice.mapper.dto.OrderRes4Mapper">
+        <resultMap id="BaseResultMap" type="com.foodie.orderservice.dto.OrderRes11">
+            <!--Order-->
+            <id column="id" jdbcType="INTEGER" property="orderid" />
+            <result column="passengerid" jdbcType="INTEGER" property="passengerid" />
+            <result column="driverid" jdbcType="INTEGER" property="driverid" />
+            <result column="pdrouteid" jdbcType="INTEGER" property="pdrouteid" />
+            <result column="departureid" jdbcType="INTEGER" property="departureid" />
+            <result column="destinationid" jdbcType="INTEGER" property="destinationid" />
+            <result column="carid" jdbcType="INTEGER" property="carid" />
+            <result column="fare" jdbcType="DECIMAL" property="fare" />
+            <!--passenger-->
+            <result column="passengername" jdbcType="VARCHAR" property="passengername" />
+            <result column="passengerphone" jdbcType="VARCHAR" property="passengerphone" />
+            <!--driver-->
+            <result column="drivername" jdbcType="VARCHAR" property="drivername" />
+            <result column="driverphone" jdbcType="VARCHAR" property="driverphone" />
+            <!--route1-->
+            <result column="distance" jdbcType="INTEGER" property="distance" />
+            <result column="timecost" jdbcType="INTEGER" property="timecost" />
+            <result column="toll" jdbcType="INTEGER" property="toll" />
+            <!--departure-->
+            <result column="departurename" jdbcType="VARCHAR" property="departurename" />
+            <result column="departurelongitude" jdbcType="DOUBLE" property="departurelongitude" />
+            <result column="departurelatitude" jdbcType="DOUBLE" property="departurelatitude" />
+            <!--destination-->
+            <result column="destinationname" jdbcType="VARCHAR" property="destinationname" />
+            <result column="destinationlongitude" jdbcType="DOUBLE" property="destinationlongitude" />
+            <result column="destinationlatitude" jdbcType="DOUBLE" property="destinationlatitude" />
+            <!--car-->
+            <result column="brand" jdbcType="VARCHAR" property="carbrand" />
+            <result column="number" jdbcType="VARCHAR" property="carnumber" />
+            <!--orderpay-->
+
+
+        </resultMap>
+
+        <select id="select" parameterType="com.foodie.orderservice.dto.OrderReq11" resultMap="BaseResultMap">
+            SELECT `order`.`id`,
+            `orderpay`.`fare`,
+            `user`.`id` as `passengerid`,
+            `user`.`name` as `passengername`,
+            `user`.`phone` as `passengerphone`,
+            `user`.`id` as `driverid`,
+            `user`.`name` as `drivername`,
+            `user`.`phone` as `driverphone`,
+            `order`.`carid`,
+            `car`.`brand`,
+            `car`.`number`,
+            `route`.`distance`,
+            `route`.`timecost`,
+            `route`.`toll`,
+            `site`.`id` as `departureid`,
+            `site`.`name`as`departurename`,
+            `site`.`longitude`as`departurelongitude`,
+            `site`.`latitude`as`departurelatitude`,
+            `site`.`id` as `destinationid`,
+            `site`.`name`as`destinationname`,
+            `site`.`longitude`as`destinationlongitude`,
+            `site`.`latitude`as`destinationlatitude`
+            FROM `didi`.`order`,`didi`.`user`,`didi`.`car`,`didi`.`route`,`didi`.`site`,`didi`.`orderpay` where `order`.`id`=#{orderid,jdbcType=INTEGER} and `passengerid`=#{passengerid,jdbcType=INTEGER}
+            and `driverid`=`order`.`driverid` and `car`.`id`= `order`.`carid`and `route`.`id`=`order`.`pdrouteid`
+            and `site`.`id`= `route`.`departureid` and `site`.`id`= `route`.`destinationid` and `orderpay`.`id`= `order`.`orderpayid`;
+        </select>
+
+    </mapper>

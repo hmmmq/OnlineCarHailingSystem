@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c66d2a35-81a7-467c-968b-6833096dce1b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\apache-maven-3.6.3-bin\repository" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.3-bin/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1xtQbn0CFGq8Ui3X658HnqDcQbm" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/projects/SpringCloudProjects/onlineExam" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c66d2a35-81a7-467c-968b-6833096dce1b" name="Default Changelist" comment="" />
+      <created>1631171978849</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631171978849</updated>
+      <workItem from="1631171984887" duration="10390000" />
+      <workItem from="1631230950559" duration="21000" />
+      <workItem from="1631259410278" duration="900000" />
+      <workItem from="1631269148570" duration="5731000" />
+      <workItem from="1631347240317" duration="1561000" />
+      <workItem from="1631362734028" duration="2897000" />
+      <workItem from="1631407736860" duration="7682000" />
+      <workItem from="1631967974226" duration="2485000" />
+      <workItem from="1632356624443" duration="3041000" />
+      <workItem from="1632382582152" duration="8530000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="423" y="104" key="FileChooserDialogImpl" timestamp="1632390092940">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="423" y="104" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1632390092940" />
+    <state width="1237" height="80" key="GridCell.Tab.0.bottom" timestamp="1631197097463">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="80" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1631197097463" />
+    <state width="1237" height="80" key="GridCell.Tab.0.center" timestamp="1631197097463">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="80" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1631197097463" />
+    <state width="1237" height="80" key="GridCell.Tab.0.left" timestamp="1631197097461">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="80" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1631197097461" />
+    <state width="1237" height="80" key="GridCell.Tab.0.right" timestamp="1631197097463">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="80" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1631197097463" />
+    <state x="146" y="0" key="SettingsEditor" timestamp="1631184246617">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="146" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1631184246617" />
+    <state x="30" y="54" key="new project wizard" timestamp="1632382711134">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="30" y="54" key="new project wizard/0.0.1280.689@0.0.1280.689" timestamp="1632382711134" />
+    <state x="299" y="154" key="run.anything.popup" timestamp="1632383993271">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="299" y="154" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1632383993271" />
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1631183792920">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1631183792920" />
+  </component>
+</project>

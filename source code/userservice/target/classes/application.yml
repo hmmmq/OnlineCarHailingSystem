@@ -1,0 +1,32 @@
+server:
+  port: 6004
+
+spring:
+  application:
+    name: userservice
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/didi?serverTimezone=GMT
+    username: root
+    password: 123
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration
+
+mybatis:
+  mapper-locations: classpath:com.foodie.loginprovider.mapper/*.xml
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://euk1.com:7001/eureka/
+    registry-fetch-interval-seconds: 5
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 60
+    hostname: localhost
+    prefer-ip-address: true
+
+#  rabbitmq:
+#    host: www.foodiesquad.top
+#    username: foodie
+#    password: foodie123

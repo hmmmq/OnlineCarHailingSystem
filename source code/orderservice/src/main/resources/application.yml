@@ -1,0 +1,35 @@
+server:
+  port: 6003
+spring:
+  application:
+    name: demoserver
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/didi #最新的数据库，可连接。
+    username: root
+    password: 123
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration
+#  rabbitmq:
+#    host: www.foodiesquad.top
+#    username: foodie
+#    password: foodie123
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://euk1.com:7001/eureka/
+    instance:
+      hostname: localhost
+      prefer-ip-address: true
+
+mybatis:
+  configuration:
+    use-generated-keys: true
+
+  #包含的服务，也可以exclude,服务中心就不上线
+  #management.endpoints.web.exposure.include=*
+
+  #可以远程关闭服务节点
+  #management.endpoint.shutdown.enabled=true
+
+  #可以上报服务的真实健康状态
+  #eureka.client.health

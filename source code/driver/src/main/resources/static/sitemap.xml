@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url>
+	<loc>Ataxi.com</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>1.0</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/logo5.png</image:loc>
+	<image:title>logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/LoginWithWechat.jpeg</image:loc>
+	<image:title>LoginWithWechat.jpeg</image:title>
+	</image:image>
+	<video:video>
+	<video:content_loc>Ataxi.com/vid/movie.mp4</video:content_loc>
+	<video:title>movie</video:title>
+	</video:video>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/login.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/logo4.png</image:loc>
+	<image:title>logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/register.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/placeholder-image.png</image:loc>
+	<image:title>students.jpeg</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/placeholder-image.png</image:loc>
+	<image:title>teachers.jpeg</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/registeraspassenger.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/placeholder-image.png</image:loc>
+	<image:title>placeholder%20image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/registerasdriver.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/placeholder-image.png</image:loc>
+	<image:title>placeholder%20image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>Ataxi.com</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>1.0</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/assest.jpeg</image:loc>
+	<image:title>assest.jpeg</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/􀥵@3x.png</image:loc>
+	<image:title>􀥵@3x</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/􀖜@3x.png</image:loc>
+	<image:title>􀥵@3x</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/功能备份%202@2x.png</image:loc>
+	<image:title>功能备份@2x</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/功能备份@2x.png</image:loc>
+	<image:title>功能备份%25202@2x</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/driverwallet.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/assest.jpeg</image:loc>
+	<image:title>assest.jpeg</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/银行卡备份3@3x.png</image:loc>
+	<image:title>银行卡备份@3x</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/银行卡备份@3x.png</image:loc>
+	<image:title>银行卡备份%25202@3x</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/银行卡备份%202@3x.png</image:loc>
+	<image:title>placeholder%20image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/drivertakeorder.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/driverorderlist.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/drivingtake.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/placeholder-image.png</image:loc>
+	<image:title>placeholder%20image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>Ataxi.com</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>1.0</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/assest.jpeg</image:loc>
+	<image:title>assest.jpeg</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/功能备份%202@2x.png</image:loc>
+	<image:title>功能备份@2x</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/功能备份@2x.png</image:loc>
+	<image:title>功能备份%25202@2x</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/pasmap.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/placeholder-image.png</image:loc>
+	<image:title>placeholder%20image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/paswallet.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/assest.jpeg</image:loc>
+	<image:title>assest.jpeg</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/银行卡备份3@3x.png</image:loc>
+	<image:title>银行卡备份@3x</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/银行卡备份@3x.png</image:loc>
+	<image:title>银行卡备份%25202@3x</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/银行卡备份%202@3x.png</image:loc>
+	<image:title>placeholder%20image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/pasorderlist.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/passub.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/placeholder-image.png</image:loc>
+	<image:title>placeholder%20image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/paspay.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/placeholder-image.png</image:loc>
+	<image:title>placeholder%20image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/drivingstartitinerary.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/placeholder-image.png</image:loc>
+	<image:title>placeholder%20image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>ataxi.com/pasdes.html</loc>
+	<lastmod>2021-09-11</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>Ataxi.com/img/placeholder-image.png</image:loc>
+	<image:title>placeholder%20image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>Ataxi.com/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+</urlset>

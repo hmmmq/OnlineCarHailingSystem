@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.foodie.loginprovider.mapper.StudentMapper">
+  <resultMap id="BaseResultMap" type="com.foodie.pojo.Student">
+    <id column="stuid" jdbcType="INTEGER" property="stuid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="academy" jdbcType="VARCHAR" property="academy" />
+    <result column="startyear" jdbcType="DATE" property="startyear" />
+    <result column="degree" jdbcType="CHAR" property="degree" />
+    <result column="major" jdbcType="VARCHAR" property="major" />
+    <result column="batchid" jdbcType="INTEGER" property="batchid" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+  </resultMap>
+  <select id="selectStudentByPrimaryKey" parameterType="com.foodie.pojo.Student" resultMap="BaseResultMap">
+    select stuid, name, academy, startyear, degree, major, batchid, password
+    from student
+    where stuid = #{stuid,jdbcType=INTEGER} and password = #{password,jdbcType=VARCHAR}
+  </select>
+  <insert id="insertStudent" useGeneratedKeys="true" keyColumn="stuid" keyProperty="stuid" parameterType="com.foodie.pojo.Student">
+    insert into student (name, academy,
+    startyear, degree, major,
+    batchid, password)
+    values (#{name,jdbcType=VARCHAR}, #{academy,jdbcType=VARCHAR},
+    #{startyear,jdbcType=DATE}, #{degree,jdbcType=CHAR}, #{major,jdbcType=VARCHAR},
+    #{batchid,jdbcType=INTEGER}, #{password,jdbcType=VARCHAR})
+  </insert>
+</mapper>

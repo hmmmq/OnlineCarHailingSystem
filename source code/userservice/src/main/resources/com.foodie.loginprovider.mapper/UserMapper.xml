@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.foodie.loginprovider.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.foodie.pojo.User">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+  </resultMap>
+  <select id="selectUserByPrimaryKey" parameterType="com.foodie.pojo.User" resultMap="BaseResultMap">
+    select id, password, name, phone,type
+    from user
+    where userid = #{id,jdbcType=INTEGER} and password = #{password,jdbcType=VARCHAR}
+  </select>
+
+  <insert id="insertUser" useGeneratedKeys="true" keyColumn="id" keyProperty="id" parameterType="com.foodie.pojo.User">
+    insert into user (password, name, phone,type)
+    values ( #{password,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR} , #{phone,jdbcType=VARCHAR},#{type,jdbcType=INTEGER})
+  </insert>
+</mapper>
